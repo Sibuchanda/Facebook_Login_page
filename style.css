@@ -1,0 +1,776 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&family=Tektur:wght@600&family=Titillium+Web&family=Ubuntu:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Roboto:wght@100&family=Tektur:wght@600&family=Titillium+Web&family=Ubuntu:wght@400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&family=Roboto:wght@100&family=Tektur:wght@600&family=Titillium+Web&family=Ubuntu:wght@400;500&display=swap');
+
+/* ==================================== BASE PROPERTIES ================================ */
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    /* font-size: 10px;
+    font-size: 1 rem; */
+}
+
+body{
+
+    background: rgb(220 220 220 / 30%);
+
+}
+
+
+/* ===================================Container =============================== */
+
+
+.main{
+
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border:6px solid green; */
+    height:100vh;
+}
+
+
+.container{
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:auto;
+    /* border: 3px solid red; */
+
+}
+
+.section{
+
+
+    display:flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /* border:2px solid red; */
+    width: 60vw;
+    height: 46vh;
+    column-gap: 5rem;
+    /* height: auto; */
+   
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* ===================================Left section  =============================== */
+
+
+
+.left{
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10rem;
+
+}
+
+.left h1{
+
+    font-size: 4rem;
+     color: #0d94ff;
+
+}
+
+.left p{
+
+     font-size: 1.8rem;
+     font-weight: 400;
+     font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================Right section  =============================== */
+/* 
+input[type=text]:hover {
+    border: 3px solid #297deb;
+  } */
+
+  input:focus{
+
+    outline:2px solid #0d94ff;
+   
+    
+  }
+
+
+
+.right{
+
+    display: flex;
+    flex-direction: column;
+    border:1px solid rgb(221, 221, 221);
+    outline: none;
+    height:40vh;
+    width: 21vw;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+#email{
+
+    padding: 0.9rem 0.9rem;
+    margin: 0.5rem 0.9rem;
+    font-size: 1.5rem;
+    border: 1px solid rgb(119 119 119 / 41%);
+}
+
+
+
+/* #email:hover{
+border:1px solid blue;
+} */
+
+#password{
+
+       padding: 0.9rem 0.9rem;
+    margin: 0.5rem 0.9rem;
+    font-size: 1.5rem;
+    border: 1px solid rgb(119 119 119 / 41%);
+}
+
+#log_in{
+
+       padding: 0.9rem 0.9rem;
+    margin: 0.5rem 0.9rem;
+    font-size: 1.9rem;
+    background-color: #0d94ff; 
+    color:white;
+    outline:none;
+    border:0.1px solid  #0d94ff; 
+    border-radius:4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0.1s;
+
+}
+
+#log_in:hover{
+
+    transform: translateX(2px);
+    background-color:#0a72c7; 
+
+}
+
+
+#forget_password{
+    padding: 0.9rem 0.9rem;
+    margin: 0.5rem 0.9rem;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #4747ec;
+    font-weight: bold;
+}
+
+
+#new_account{
+
+    padding: 0.9rem 0.9rem;
+    margin: 1.5rem 0.9rem;
+    font-size: 1.9rem;
+    background-color: #27ba46;
+    color:white;
+    outline:none;
+    border:0.1px solid  #60fb81; 
+    border-radius:4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0.1s;
+
+}
+
+#new_account:hover{
+
+    transform: translateX(2px);
+    background-color:#12ca3a ;
+
+}
+
+
+/* ====================================create section ======================= */
+
+
+.create{
+
+    display: flex;
+    flex-direction: row;
+    /* border:2px solid green; */
+    width:100vw;
+    text-align: center;
+    justify-content: center;
+    margin-left: 46rem;
+}
+
+
+.create a{
+
+     font-size: 1.6rem;
+     text-decoration: none;
+     padding: 0rem 0.6rem;
+     color:black;
+     font-weight: bolder;
+    
+}
+.create p{
+    font-size: 1.6rem;
+
+
+}
+
+
+
+
+
+/* ===================================================== RESPONSIVE SECTION ================================= */
+
+
+
+@media only screen and (max-width:1450px){
+
+    .create a{
+
+        font-size: 1.2rem;
+    
+   }
+   .create p{
+       font-size: 1.2rem;
+   
+   
+   }
+   
+
+}
+@media only screen and (max-width:1330px){
+
+    .create{
+
+   
+        margin-left: 43rem;
+    }
+   
+
+}
+
+@media only screen and (max-width:1210px){
+
+    
+
+    .right{
+
+        
+        width: 30vw;
+
+    }
+
+
+    .create{
+
+   
+        margin-left: 37rem;
+    }
+  
+
+}
+
+@media only screen and (max-width:1000px){
+
+    
+
+    .right{
+
+        
+        width: 50vw;
+
+    }
+
+
+    .create{
+
+   
+        margin-left: 25rem;
+    }
+
+
+    .left {
+      
+        margin-left: -5rem;
+    }
+ 
+  
+
+}
+
+ @media only screen and (max-width:800px){
+
+    
+
+    .right{
+
+        
+        width: 60vw;
+
+    }
+
+
+    .create{
+
+   
+        margin-left: 14rem;
+    }
+
+
+    .left {
+      
+        margin-left: -10rem;
+    }
+
+
+
+    .left h1{
+
+        font-size: 3.5rem;
+         
+    }
+    
+    .left p{
+    
+         font-size: 1.5rem;
+         
+    }
+
+    #log_in{
+        font-size: 1.5rem;
+
+    }
+
+    #new_account{
+
+        font-size: 1.5rem;
+    }
+    
+ 
+  
+
+}
+
+
+@media only screen and (max-width:715px){
+
+    
+
+    .right{
+
+        
+        width: 80vw;
+
+    }
+
+
+    .create{
+
+        margin-left: 14rem;
+    }
+
+
+    .left {
+      
+        margin-left: -5rem;
+    }
+
+
+
+    .left h1{
+
+        font-size: 3rem;
+         
+    }
+    
+    .left p{
+    
+         font-size: 1rem;
+         
+    }
+
+    #log_in{
+        font-size: 1.2rem;
+
+    }
+
+    #new_account{
+
+        font-size: 1.2rem;
+    }
+    
+ 
+  
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:665px){
+
+    
+
+    .right{
+
+        
+        width: 100vw;
+
+    }
+
+
+    .create{
+
+        margin-left: 9rem;
+    }
+
+
+    .left {
+      
+        margin-left: -5rem;
+    }
+
+
+
+    .left h1{
+
+        font-size: 2.1rem;
+         
+    }
+    
+    .left p{
+    
+         font-size: 1rem;
+         
+    }
+
+    #log_in{
+        font-size: 1rem;
+
+    }
+
+    #new_account{
+
+        font-size: 1rem;
+    }
+
+    #forget_password{
+
+        font-size: 1rem;
+    }
+    
+ 
+  
+
+}
+
+
+
+
+@media only screen and (max-width:590px){
+
+
+.section{
+
+    display:flex;
+    flex-direction: column;
+    
+
+}
+
+
+.create{
+
+    margin-top: 10rem;
+
+    margin-left: 0rem;
+  
+
+}
+
+
+
+.right {
+    width: 68w;
+    width: 80vw;
+    margin-right: 7rem;
+}
+
+
+
+
+.left h1{
+
+    font-size: 3.5rem;
+     
+}
+
+.left p{
+
+     font-size: 2rem;
+     
+}
+
+
+
+#log_in{
+    font-size: 1.5rem;
+
+}
+
+#new_account{
+
+    font-size: 1.5rem;
+}
+
+#forget_password{
+
+    font-size: 1.3rem;
+}
+
+
+
+
+.section{
+
+ column-gap: 0rem;
+
+  
+}
+
+
+}
+
+
+
+
+
+@media only screen and (max-width:590px){
+
+    .create {
+        margin-top: 12rem;
+        margin-right: 8rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width:420px){
+
+    .right {
+        margin-right: 5rem;
+    }
+
+
+    .create {
+        margin-top: 12rem;
+        margin-right: 5rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width:362px){
+
+
+    .create{
+
+        margin-top: 10rem;
+    
+        margin-left: 0rem;
+      
+    
+    }
+
+
+    
+
+.left h1{
+
+    font-size: 3.1rem;
+     
+}
+
+.left p{
+
+     font-size: 1.6rem;
+     
+}
+
+    
+
+
+}
+
+
+
+@media only screen and (max-width:300px){
+
+
+    
+#email{
+
+   
+    font-size: 1rem;
+
+}
+
+#password{
+
+ 
+    font-size: 1rem;
+   
+}
+
+.right {
+    margin-right: 3rem;
+}
+
+
+.create a {
+    font-size: 1rem;
+}
+
+
+.create p {
+    font-size: 1rem;
+}
+
+
+.create {
+    margin-right: 3rem;
+}
+
+}
+
+
+
+
+
+@media only screen and (max-width:270px){
+
+
+    .create a {
+        font-size: 0.6rem;
+    }
+    
+    
+    .create p {
+        font-size: 0.6rem;
+    }
+    
+    
+    .create {
+        margin-right: 5rem;
+    }
+
+    .left h1 {
+        font-size: 2.5rem;
+    }
+
+    .left p {
+        font-size: 1.2rem;
+    }
+
+    .left {
+        margin-left: -2rem;
+    }
+
+}
+
+
+@media only screen and (max-width:198px){
+
+    .right {
+        height: auto;
+    }
+    #email {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+
+
+/* ----------------- 2K RESOLUTION (2848 X 1152,   2848 X 1536) --------------- */
+
+
+@media screen and (min-width:2048px) {
+
+    body {
+
+        zoom: 1.3;
+    }
+}
+
+
+
+
+
+/* ----------------- 4K RESOLUTION (3840 X 2160,   4896 X 22160) --------------- */
+
+@media screen and (min-width:3840px) {
+
+    body {
+
+        zoom: 2.3;
+    }
+}
